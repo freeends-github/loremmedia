@@ -3,9 +3,13 @@
   margin: 0;
   padding: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
+  
 }
 .top-container{
   width: calc(100% - 6.625%);
@@ -18,10 +22,18 @@ body{
 li{
   list-style: none;
 }
+button{
+  outline: none;
+}
 h2{
   font-weight: 600;
   font-size: 50px;
   line-height:60px; text-transform: capitalize;
+}
+.paragraph-type{
+  color: #7E76F9;
+  font-size: 20px;
+  text-transform: capitalize;
 }
 .regular-btn{
   background-color: #7E76F9;
@@ -34,6 +46,10 @@ h2{
   border-radius: 25px;
   cursor: pointer;
   outline: none;
+}
+.regular-btn:hover{
+  box-shadow: 0 10px 20px rgba(126,118,248,0.16);
+  cursor: pointer;
 }
 .header_nav{
   margin-top: 56px;
@@ -52,6 +68,9 @@ h2{
           text-transform: uppercase;
           color: #fff;
           font-weight: 500;
+          &:hover,&:active{
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -70,32 +89,48 @@ h2{
   width: 50%;
   h2{text-transform: uppercase;}
   p{font-weight: 300; text-transform: uppercase; width: 50%; margin: 17px 0 27px 0;}
-
-  .social-media_icons{
-    display: flex;
-    flex-direction: row;
-    transform: rotate(90deg);
-    li{
-      margin-right: 50px;
+}
+.social-media_icons{
+  transform: translateY(-150px);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  
+  li{
+    margin-bottom: 50px;
+    .fa:hover,.fa:active{
+      transform: rotate(270deg);
+      // transition: transform 2s ease;
+      cursor: pointer;
+    }
+    &:last-of-type{
+      margin-bottom: 0;
     }
   }
-  //ill be back here, you fucking shiiiitttttt
 }
 #mouse{
+  transform: translateY(-150px);
   width: 100%;
   display: flex;
   justify-content: center;
-  button{
+  a{
     box-shadow: 0 10px 20px rgba(126,118,248,0.16);
     padding: 10px 10px 10px 10px;
     border-radius: 360px;
     height: 41px;
     background: transparent;
     border: none;
+    &:hover{
+      img{
+        transform: translateY(-10px);
+        transition: all 0.25s ease-in-out;
+      }
+    }
   }
 }
-.biography{
-  margin-top: 262px;
+#biography{
+  margin-top: 30px;
+  padding-top: 90px;
   display: flex;
   img{
     width: 40%;
@@ -122,9 +157,9 @@ div#our-services{
   margin-top: 235px;
   .our-services_p{
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Lato' sans-serif;
-    font-weight: 500;
+    font-weight: 400;
   }
   .services-container{
     margin-top: 96.8px;
@@ -141,38 +176,43 @@ div#our-services{
       display: flex;
       flex-direction:column-reverse;
       align-items: flex-start;
+      &>div{
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+      }
       h4{
         text-transform: uppercase;
         font-size: 18px;
-        font-weight: 600;
-        margin-top: 10px;
+        font-weight: 400;
+        margin-top: 8px;
       }
       .service-btn{
         padding: 6px 20.5px 7.7px 18px;
         font-size: 12px;
         font-weight: 500;
         float: right;
-        margin-top: 45px;
+        margin-top: 35px;
       }
       p{
         font-family: 'Lato' sans-serif;
         font-size: 15px;
         font-weight: 400;
-        margin-top: 39px;
+        margin-top: 30px;
         height: 131px;
       }
     }
   }
 }
-div#our-pricing{
+div#our-prices{
   background-color: rgba(126,118,249,0.15);
   text-align: center;
   h2{
     margin-bottom: 65px;
   }
-  .carousel-inner{
-    margin-bottom: 90px;
-  }
+  // .carousel-inner{
+    //   margin-bottom: 90px;
+    // }
   .carousel-item{
     width: 370px;
     background-color: #fff;
@@ -182,11 +222,15 @@ div#our-pricing{
     h3{
       margin: 69px 0 36px 0;
     }
-    button{
+    .carousel-btn{
       border: 1px solid #7E76F9;
       background-color: transparent;
       color: #7E76F9;
       margin: 43px 0 53px 0 ;
+    }
+    .carousel-btn:hover{
+      color: white;
+      background-color: #7E76F9;
     }
     p{
       font-size: 16px;
@@ -220,7 +264,7 @@ footer{
   position: relative;
   .newsletter{
     margin-top: 50px;
-    margin-bottom: 350px;
+    margin-bottom: 300px;
     text-align: center;
     h3{
       margin-bottom: 47px;
@@ -243,22 +287,39 @@ footer{
       }
     }
   }
-  #footer-navigations{
+  .footer-navigations{
+    padding: 0 50px;
+    .logo-footer{
+      h3{
+        margin-top: 26px;
+      }
+    }
     display: flex;
     color: #fff;
     justify-content: space-between;
     .fa-icons_footer{
       display: flex;
+      margin-top: 26px;
       li{
         margin-right: 39px;
+        cursor: pointer;
+      }
+    }
+    .footers-div{
+      h4{
+        margin-bottom: 30px;
       }
     }
     .footer_nav{
       ul{
         li{
+          margin-bottom: 20px;
           a{
             text-decoration: none;
             color: #fff;
+            &:hover,&:active{
+              text-decoration: underline;
+            }
           }
         }
       }
