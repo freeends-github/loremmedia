@@ -6,33 +6,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Lorem Media</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@300;400;500;600&display=swap');
+        </style>
     </head>
     
     <body>
         <header>
             <div class="top-container">
-                <div id="header_logo">
-                    <img src="./img/logo-header.png" alt="Logo">
+                <div class="header_nav">
+                    <div id="header_logo">
+                        <img src="./img/logo-header.png" alt="Logo">
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a>
+
+                            </li>
+                            <li><a href="#">Services</a>
+
+                            </li>
+                            <li><a href="#">Prices</a>
+
+                            </li>
+                            <li><a href="#">Contact</a>
+
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="header_nav">
-                    <ul>
-                        <li><a href="#">Home</a>
-
-                        </li>
-                        <li><a href="#">Services</a>
-
-                        </li>
-                        <li><a href="#">Prices</a>
-
-                        </li>
-                        <li><a href="#">Contact</a>
-
-                        </li>
-                    </ul>
-                </nav>
             </div>
         </header>
-        <img src="./img/header-img.png" alt="background shape">
+        <img id="bg-shape_header" src="./img/header-img.png" alt="background shape">
         <main>
             <div class="top-container">
                 <div class="social-media">
@@ -42,15 +53,21 @@
                     <button class="regular-btn">Get a free audit</button>
                 </div>
                 <ul class="social-media_icons">
-                    <li>fontawesome</li>
-                    <li>fontawesome</li>
-                    <li>fontawesome</li>
-                    <li>fontawesome</li>
-                    <li>fontawesome</li>
+                    <li><i class="fa fa-facebook lg" style="font-size: 1em; color:#7E76F9;" aria-hidden="true"></i>
+                    </li>
+                    <li><i class="fa fa-google-plus lg" style="font-size: 1em; color:#7E76F9;"
+                        aria-hidden="true"></i>
+                    </li>
+                    <li><i class="fa fa-twitter lg" style="font-size: 1em; color:#7E76F9;" aria-hidden="true"></i>
+                    </li>
+                    <li><i class="fa fa-instagram lg" style="font-size: 1em; color:#7E76F9;" aria-hidden="true"></i>
+                    </li>
                 </ul>
             </div>
             <div id="mouse">
-                <img src="./img/mouse.png" alt="mouse">
+                <button>
+                    <img src="./img/mouse.png" alt="mouse">
+                </button>
             </div>
             <div class="top-container">
                 <div class="biography">
@@ -62,140 +79,163 @@
                             innovative solutions that deliver the right type of audience to you in
                             the most effective strategies possible. We strive to develop a community
                             around your business, polishing your branding, and improving your public
-                            relations. Social Media is now one of the most powerful marketing tools
-                            with the ability to communicate with a target audience in real time. It's
-                            2019: time to sink or swim. We are your Social Media Marketing Agency.</p>
-                        <button
-                        class="regular-btn">see more</button>
-                            <img src="./img/biography-background.png" alt="background-bio">
+                            relations.
+                            <br>Social Media is now one of the most powerful marketing tools with the
+                            ability to communicate with a target audience in real time.
+                            <br>
+                            <br>It's 2019: time to sink or swim.
+                            <br>
+                            <br>
+                        </p>
+                        <button class="regular-btn">see more</button>
+                        <img src="./img/biography-background.png" alt="background-bio">
                     </div>
                 </div>
             </div>
+            </sdiv>
             <div class="container">
                 <div id="our-services">
                     <p class="paragraph-type our-services_p">Our Services</p>
                      <h2>what we offer</h2>
                     <div class="services-container">
                         <div class="service">
-                            <img src="./img/001-process@2x.png" alt="social media managment">
-                             <h4>social media managment</h4>
+                            <div>
+                                <button class="regular-btn service-btn">see more</button>
+                            </div>
                             <p>Perfect for growing your brand’s social community and engage with the
                                 right audience. We manage everything from curation of content to management
-                                of comments and everything in between.</p>
-                            <button class="regular-btn service-btn">see more</button>
+                                of</p>
+                             <h4>social media managment</h4>
+                            <img src="./img/001-process@2x.png" alt="social media managment">
                         </div>
                         <div class="service">
-                            <img src="./img/002-social-media@2x.png" alt="socials growth campaing">
+                            <div>
+                                <button class="regular-btn service-btn">see more</button>
+                            </div>
+                            <p>Our social growth campaign will have your socials come alive.With constant
+                                growth and engagement you will be sure to have the thriving you’ve been</p>
                              <h4>socials growth campaing</h4>
-                            <p>Our social growth campaign will have your socials come alive. With constant
-                                growth and engagement you will be sure to have the thriving you’ve been
-                                looking for.</p>
-                            <button class="regular-btn service-btn">see more</button>
+                            <img src="./img/002-social-media@2x.png" alt="socials growth campaing">
                         </div>
                         <div class="service">
-                            <img src="./img/003-responsive@2x.png" alt="branding & media">
+                            <div>
+                                <button class="regular-btn service-btn">see more</button>
+                            </div>
+                            <p>Done right, branding offers a company an edge over the competition. So
+                                what exactly is branding, and why is it important for companies to integrate
+                                a well-rounded branding and media strategy?</p>
                              <h4>branding & media</h4>
-                            <p>Done right, branding offers a company an edge over the competition. So
-                                what exactly is branding, and why is it important for companies to integrate
-                                a well-rounded branding and media strategy?</p>
-                            <button class="regular-btn service-btn">see more</button>
+                            <img src="./img/003-responsive@2x.png" alt="branding & media">
                         </div>
                         <div class="service">
-                            <img src="./img/004-social-media-1@2x.png" alt="influencer marketing">
+                            <div>
+                                <button class="regular-btn service-btn">see more</button>
+                            </div>
+                            <p>We will pair your business with influencers that speak to your audience.
+                                Influencer Marketing is the most effective way to reach a loyal audience.</p>
                              <h4>influencer marketing</h4>
-                            <p>Done right, branding offers a company an edge over the competition. So
-                                what exactly is branding, and why is it important for companies to integrate
-                                a well-rounded branding and media strategy?</p>
-                            <button class="regular-btn service-btn">see more</button>
+                            <img src="./img/004-social-media-1@2x.png" alt="influencer marketing">
                         </div>
                         <div class="service">
-                            <img src="./img/007-analysis@2x.png" alt="social media paid advertising">
-                             <h4>social media paid advertising</h4>
+                            <div>
+                                <button class="regular-btn service-btn">see more</button>
+                            </div>
                             <p>Our ad campaigns will bring you the results your looking for. From brand
                                 awareness campaigns to lead funnels, we have got the tools to create the
                                 right ads for your business. Our re-targeting campaigns will be sure to
-                                get your visitors coming back to your site.</p>
-                            <button class="regular-btn service-btn">see more</button>
+                                get your visitors coming back to your</p>
+                             <h4>social media paid advertising</h4>
+                            <img src="./img/007-analysis@2x.png" alt="social media paid advertising">
                         </div>
                         <div class="service">
-                            <img src="./img/008-computer@2x.png" alt="content marketing services">
-                             <h4>content marketing services</h4>
+                            <div>
+                                <button class="regular-btn service-btn">see more</button>
+                            </div>
                             <p>We can create and provide your company with the best content marketing
                                 for your socials to improve online presence. Creating valuable and quality
                                 content helps boost conversions and improve customer retention.</p>
-                            <button
-                            class="regular-btn service-btn">see more</button>
+                             <h4>content marketing services</h4>
+                            <img src="./img/008-computer@2x.png" alt="content marketing services">
                         </div>
-                        <!-- background image -->
                     </div>
                 </div>
-                <div id="our-pricing">
+            </div>
+            <div id="our-pricing">
+                <div class="container">
                     <p class="paragraph-type">pricing</p>
                      <h2>our pricing</h2>
-                    <div class="carousel_prices">
-                        <div class="carousel-item">
-                             <h3>Iron Package</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh,
-                                sagittis ac faucibus sit amet, faucibus vitae lacus.</p>
-                             <h3>$ 140</h3>
-                            <button class="regular-btn carousel-btn">See Details</button>
+                    <div id="carousel" class="carousel_prices carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                 <h3>Iron Package</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh,
+                                    sagittis ac faucibus sit amet, faucibus vitae lacus.</p>
+                                 <h3>$ 140</h3>
+                                <button class="regular-btn carousel-btn">See Details</button>
+                            </div>
+                            <div class="carousel-item">
+                                 <h3>Bronze Package</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh,
+                                    sagittis ac faucibus sit amet, faucibus vitae lacus.</p>
+                                 <h3>$ 140</h3>
+                                <button class="regular-btn carousel-btn">See Details
+                                    </>
+                            </div>
+                            <div class="carousel-item">
+                                 <h3>Silver Package</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh,
+                                    sagittis ac faucibus sit amet, faucibus vitae lacus.</p>
+                                 <h3>$ 140</h3>
+                                <button class="regular-btn carousel-btn">See Details</button>
+                            </div>
+                            <div class="carousel-item">
+                                 <h3>Gold Package</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh,
+                                    sagittis ac faucibus sit amet, faucibus vitae lacus.</p>
+                                 <h3>$ 140</h3>
+                                <button class="regular-btn carousel-btn">See Details</button>
+                            </div>
+                            <div class="carousel-item">
+                                 <h3>Platinium Package</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh,
+                                    sagittis ac faucibus sit amet, faucibus vitae lacus.</p>
+                                 <h3>$ 140</h3>
+                                <button class="regular-btn carousel-btn">See Details</button>
+                            </div>
+                            <div class="carousel-item">
+                                 <h3>Diamond Package</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh,
+                                    sagittis ac faucibus sit amet, faucibus vitae lacus.</p>
+                                 <h3>$ 140</h3>
+                                <button class="regular-btn carousel-btn">See Details</button>
+                            </div>
+                            <div class="carousel-item">
+                                 <h3>Master Package</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh,
+                                    sagittis ac faucibus sit amet, faucibus vitae lacus.</p>
+                                 <h3>$ 140</h3>
+                                <button class="regular-btn carousel-btn">See Details</button>
+                            </div>
+                            <div class="carousel-item">
+                                 <h3>Grand Master Package</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh,
+                                    sagittis ac faucibus sit amet, faucibus vitae lacus.</p>
+                                 <h3>$ 140</h3>
+                                <button class="regular-btn carousel-btn">See Details</button>
+                            </div>
+                            <div class="carousel-item">
+                                 <h3>Challenger Package</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh,
+                                    sagittis ac faucibus sit amet, faucibus vitae lacus.</p>
+                                 <h3>$ 140</h3>
+                                <button class="regular-btn carousel-btn">See Details</button>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                             <h3>Bronze Package</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh,
-                                sagittis ac faucibus sit amet, faucibus vitae lacus.</p>
-                             <h3>$ 140</h3>
-                            <button class="regular-btn carousel-btn">See Details</button>
-                        </div>
-                        <div class="carousel-item">
-                             <h3>Silver Package</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh,
-                                sagittis ac faucibus sit amet, faucibus vitae lacus.</p>
-                             <h3>$ 140</h3>
-                            <button class="regular-btn carousel-btn">See Details</button>
-                        </div>
-                        <div class="carousel-item">
-                             <h3>Gold Package</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh,
-                                sagittis ac faucibus sit amet, faucibus vitae lacus.</p>
-                             <h3>$ 140</h3>
-                            <button class="regular-btn carousel-btn">See Details</button>
-                        </div>
-                        <div class="carousel-item">
-                             <h3>Platinium Package</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh,
-                                sagittis ac faucibus sit amet, faucibus vitae lacus.</p>
-                             <h3>$ 140</h3>
-                            <button class="regular-btn carousel-btn">See Details</button>
-                        </div>
-                        <div class="carousel-item">
-                             <h3>Diamond Package</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh,
-                                sagittis ac faucibus sit amet, faucibus vitae lacus.</p>
-                             <h3>$ 140</h3>
-                            <button class="regular-btn carousel-btn">See Details</button>
-                        </div>
-                        <div class="carousel-item">
-                             <h3>Master Package</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh,
-                                sagittis ac faucibus sit amet, faucibus vitae lacus.</p>
-                             <h3>$ 140</h3>
-                            <button class="regular-btn carousel-btn">See Details</button>
-                        </div>
-                        <div class="carousel-item">
-                             <h3>Grand Master Package</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh,
-                                sagittis ac faucibus sit amet, faucibus vitae lacus.</p>
-                             <h3>$ 140</h3>
-                            <button class="regular-btn carousel-btn">See Details</button>
-                        </div>
-                        <div class="carousel-item">
-                             <h3>Challenger Package</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh,
-                                sagittis ac faucibus sit amet, faucibus vitae lacus.</p>
-                             <h3>$ 140</h3>
-                            <button class="regular-btn carousel-btn">See Details</button>
-                        </div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel" data-slide-to="1"></li>
+                            <li data-target="#carousel" data-slide-to="2"></li>
+                        </ol>
                     </div>
                 </div>
             </div>
@@ -214,10 +254,18 @@
                     <img src="./img/logo.@2x.png" alt="logo">
                      <h3>Stay in touch</h3>
                     <ul class="fa-icons_footer">
-                        <li>fontawesome</li>
-                        <li>fontawesome</li>
-                        <li>fontawesome</li>
-                        <li>fontawesome</li>
+                        <li><i class="fa fa-facebook lg" style="font-size: 1em; color:#fff;" aria-hidden="true"></i>
+
+                        </li>
+                        <li><i class="fa fa-google-plus lg" style="font-size: 1em; color:#fff;" aria-hidden="true"></i>
+
+                        </li>
+                        <li><i class="fa fa-twitter lg" style="font-size: 1em; color:#fff;" aria-hidden="true"></i>
+
+                        </li>
+                        <li><i class="fa fa-instagram lg" style="font-size: 1em; color:#fff;" aria-hidden="true"></i>
+
+                        </li>
                     </ul>
                 </div>
                 <nav class="footer_nav">
@@ -244,19 +292,29 @@
                      <h4>Hours</h4>
                     <ul>
                         <li>
-                            <p>Monday: 9:00 - 18:00</p>
+                            <p>Monday: <span>9:00 - 18:00</span>
+
+                            </p>
                         </li>
                         <li>
-                            <p>Tuesday: 9:00 - 18:00</p>
+                            <p>Tuesday: <span>9:00 - 18:00</span>
+
+                            </p>
                         </li>
                         <li>
-                            <p>Wednesday: 9:00 - 18:00</p>
+                            <p>Wednesday: <span>9:00 - 18:00</span>
+
+                            </p>
                         </li>
                         <li>
-                            <p>Thursday: 9:00 - 18:00</p>
+                            <p>Thursday: <span>9:00 - 18:00</span>
+
+                            </p>
                         </li>
                         <li>
-                            <p>Friday: 9:00 - 18:00</p>
+                            <p>Friday: <span>9:00 - 18:00</span>
+
+                            </p>
                         </li>
                     </ul>
                 </div>
@@ -276,8 +334,18 @@
                     </ul>
                 </div>
             </div>
+            <img id="shape-bold" src="../img/Bg Shape bolder.png" alt="">
+            <img id="shape" src="../img/Bg Shape@2x.png" alt="">
         </footer>
-        <script src="js/all.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
     </body>
 
 </html>
